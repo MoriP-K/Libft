@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 21:07:44 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/01 21:17:58 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:32:59 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stddef.h>
 # include <limits.h> 
 # include <stdlib.h>
+# include <unistd.h>
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);

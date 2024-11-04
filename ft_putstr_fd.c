@@ -6,18 +6,17 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 11:57:17 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/31 14:25:07 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:35:05 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned int	i;
+	size_t	i;
 
-	if (!s || !fd)
+	if (!s)
 		return ;
 	i = 0;
 	while (s[i])

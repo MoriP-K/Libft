@@ -6,12 +6,11 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:11:07 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/30 22:44:11 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:08:36 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

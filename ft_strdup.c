@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:29:18 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 20:27:33 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:35:58 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
-	dup = malloc(s_len + 1);
+	dup = (char *)malloc(s_len + 1);
 	if (!dup)
 		return (NULL);
 	i = 0;

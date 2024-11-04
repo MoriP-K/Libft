@@ -6,12 +6,11 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:01:53 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/29 17:31:50 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:08:53 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -29,7 +28,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	trimmed_len = end - start;
-	str = malloc(trimmed_len + 1);
+	str = (char *)malloc(trimmed_len + 1);
 	if (!str)
 		return (NULL);
 	ft_memcpy(str, s1 + start, trimmed_len);

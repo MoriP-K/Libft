@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:22:35 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 20:55:04 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:53:38 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (start + len > ft_strlen(s))
 		len = ft_strlen(s) - start;
-	arr = malloc(len + 1);
+	arr = (char *)malloc(len + 1);
 	if (!arr)
 		return (NULL);
 	i = 0;

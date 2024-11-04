@@ -6,18 +6,17 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 11:59:36 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/31 15:21:01 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:34:52 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	unsigned int	i;
+	size_t	i;
 
-	if (!s || !fd)
+	if (!s)
 		return ;
 	i = 0;
 	while (s[i])

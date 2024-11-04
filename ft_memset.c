@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 12:26:31 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 16:57:59 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/04 16:07:37 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memset(void *s, int c, size_t n)
 		dest[i] = (unsigned char)c;
 		i++;
 	}
-	return (dest);
+	return (s);
 }
 
 // #include <stdio.h>

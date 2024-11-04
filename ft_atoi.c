@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:05:09 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 19:10:08 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:24:54 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	unsigned int	i;
-	int				sign;
-	long int		result;
+	size_t		i;
+	int			sign;
+	long int	result;
 
 	i = 0;
 	while (('\t' <= nptr[i] && nptr[i] <= '\r') || nptr[i] == ' ')

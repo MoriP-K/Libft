@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:16:54 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/27 15:19:43 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/02 23:06:43 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int	i;
+	size_t	i;
 
 	if (!s || !f)
 		return ;

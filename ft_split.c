@@ -6,13 +6,11 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:15:08 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/31 14:44:17 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:35:25 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static void	free_split_array(char **array, size_t words_allocated)
 {
@@ -26,6 +24,39 @@ static void	free_split_array(char **array, size_t words_allocated)
 		i++;
 	}
 	free(array);
+}
+
+static char	*ft_strndup(const char *start, const char *end)
+{
+	char	*dest;
+	size_t	len;
+	size_t	index;
+
+	len = end - start;
+	dest = (char *)malloc(len + 1);
+	if (!dest)
+		return (NULL);
+	index = 0;
+	while (start < end)
+	{
+		dest[index] = *start;
+		index++;
+		start++;
+	}
+	dest[index] = '\0';
+	return (dest);
+}
+
+static int	allocated_word(char **array, const char *start, const char *end,
+		size_t index)
+{
+	array[index] = ft_strndup(start, end);
+	if (!array[index])
+	{
+		free_split_array(array, index);
+		return (0);
+	}
+	return (1);
 }
 
 static size_t	ft_word_count(const char *str, char delimeter)
@@ -52,39 +83,6 @@ static size_t	ft_word_count(const char *str, char delimeter)
 		i++;
 	}
 	return (word_count);
-}
-
-static char	*ft_strndup(const char *start, const char *end)
-{
-	char	*dest;
-	size_t	len;
-	size_t	index;
-
-	len = end - start;
-	dest = malloc(len + 1);
-	if (!dest)
-		return (NULL);
-	index = 0;
-	while (start < end)
-	{
-		dest[index] = *start;
-		index++;
-		start++;
-	}
-	dest[index] = '\0';
-	return (dest);
-}
-
-static int	allocated_word(char **array, const char *start, const char *end,
-		size_t index)
-{
-	array[index] = ft_strndup(start, end);
-	if (!array[index])
-	{
-		free_split_array(array, index);
-		return (0);
-	}
-	return (1);
 }
 
 char	**ft_split(char const *s, char c)
@@ -117,14 +115,11 @@ char	**ft_split(char const *s, char c)
 }
 
 // #include <stdio.h>
-
 // int	main(void)
 // {
 // 	char	str[] = "Hello World 42Tokyo! kmoriyam";
-// 	char	charset;
+// 	char	charset = ' ';
 // 	char	**result;
-
-// 	charset = ' ';
 // 	result = ft_split(str, charset);
 // 	for (int i = 0; result[i] != NULL; i++)
 // 	{

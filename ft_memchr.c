@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:02 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 17:00:52 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2024/11/04 16:30:35 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (s_p[i] == (unsigned char)c)
-			return (&s_p[i]);
+			return ((void *)&s_p[i]);
 		i++;
 	}
 	return (NULL);
