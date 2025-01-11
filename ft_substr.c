@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:22:35 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/03 14:53:38 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:44:13 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	arr[i] = '\0';
 	return (arr);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char str[] = "123456789";
-// 	char *res = ft_substr(str, 4, 5);
-// 	printf("%s\n", res);
-// 	free(res);
-// }

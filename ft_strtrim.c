@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:01:53 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/04 17:08:53 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:44:09 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[trimmed_len] = '\0';
 	return (str);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char const str[] = "123a3241";
-// 	char const set[] = "123";
-// 	printf("%s\n", ft_strtrim(str, set));
-// }

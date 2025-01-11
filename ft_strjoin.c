@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:23:39 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 22:24:38 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:42:59 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char str[] = "1234";
-// 	char str2[] = "5678";
-
-// 	char *res = ft_strjoin(str, str2);
-// 	printf("%s\n", res);
-// 	free(res);
-// }

@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:02 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/04 16:30:35 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:41:38 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-// 	const char s1[] = "12345";
-// 	printf("c :%s\n", (char *)memchr(s1, '3', 6));
-// 	printf("my:%s\n", (char *)ft_memchr(s1, '3', 6));
-// 	return (0);
-// }

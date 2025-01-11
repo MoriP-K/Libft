@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:05:09 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/03 14:24:54 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:40:17 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,24 +40,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(sign * result));
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main()
-// {
-// 	// printf("c :%d\n",ft_atoi((char *)NULL));
-// 	printf("c :%d\n",atoi("9223372036854775809"));
-// 	printf("my:%d\n",ft_atoi("9223372036854775809"));
-
-// 	printf("c :%d\n",atoi("-2147483648"));
-// 	printf("my:%d\n",ft_atoi("-2147483648"));
-
-// 	printf("c :%d\n",atoi("-9223372036854775808"));
-// 	printf("my:%d\n",ft_atoi("-9223372036854775808"));
-
-// 	printf("c :%d\n",atoi("\t\n\r\v\f  469 \n"));
-// 	printf("my:%d\n",ft_atoi("\t\n\r\v\f  469 \n"));
-// 	printf("c :%d\n",atoi("\n\n\n  -46\b9 \n5d6"));
-// 	printf("my:%d\n",ft_atoi("\n\n\n  -46\b9 \n5d6"));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:40:21 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/04 17:08:44 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:43:38 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-
-// int main()
-// {
-// 	char s1[9] = "1234";
-// 	char s2[] = "5678";
-
-// 	printf("my: %zu, %s\n", ft_strlcat(s1, s2, 10), s1);
-// }

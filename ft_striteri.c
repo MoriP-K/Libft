@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:16:54 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 23:06:43 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:42:55 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,21 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-// void	test(unsigned int num, char *str)
-// {
-// 	(void)num;
-// 	if ('a' <= *str && *str <= 'z')
-// 		*str = *str - ('a' - 'A');
-// }
-
-// int	main(void)
-// {
-// 	void	(*func)(unsigned int, char*);
-// 	char str[] = "abcdefg";
-
-// 	func = test;
-// 	ft_striteri(str, func);
-// 	printf("%s\n", str);
-// 	return (0);
-// }

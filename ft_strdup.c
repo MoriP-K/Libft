@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:29:18 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/03 14:35:58 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:42:50 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,3 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include <string.h>
-// int	main(void)
-// {
-// 	const char s1[] = "123456789";
-// 	char *str = strdup(s1);
-// 	char *str2 = ft_strdup(s1);
-// 	printf("c :%s\n", str);
-// 	printf("my:%s\n", str2);
-// 	free(str);
-// 	free(str2);
-// 	return (0);
-// }

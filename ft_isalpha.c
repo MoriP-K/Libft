@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:15:09 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/10/31 21:54:46 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:45:05 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isalpha(int c)
 {
 	return (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'));
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%d\n", ft_isalpha(0));
-// }

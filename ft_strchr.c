@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:09:52 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 16:59:16 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:42:46 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&s_p[i]);
 	return (NULL);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-// int main()
-// {
-// 	// char s1[] = "01234";
-
-// 	printf("my: %s\n", ft_strchr(NULL, 0));
-// }

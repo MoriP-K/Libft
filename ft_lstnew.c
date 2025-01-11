@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:11:07 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/04 17:08:36 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:41:34 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	t_list *lst;
-// 	char str[] = "123456";
-
-// 	lst = ft_lstnew(str);
-// 	printf("%p\n", lst);
-// 	free(lst);
-// 	return (0);
-// }

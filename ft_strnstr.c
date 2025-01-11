@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:09:50 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/02 17:51:04 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:43:58 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-// 	const char s1[] = "123456789";
-// 	const char s2[] = "456";
-// 	printf("my:%s\n", ft_strnstr(s1, s2, 9));
-// 	return (0);
-// }

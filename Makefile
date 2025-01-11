@@ -20,7 +20,7 @@ OBJS = $(SRCS:%.c=%.o)
 
 BONUS_OBJS = $(BONUS_SRCS:%.c=%.o)
 
-BONUS_FLAG = .bonus_done
+BONUS_FLAG = .bonus_libft
 
 all: $(NAME)
 

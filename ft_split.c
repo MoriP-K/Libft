@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:15:08 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/03 14:35:25 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:42:41 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,16 +113,3 @@ char	**ft_split(char const *s, char c)
 	array[word_index] = NULL;
 	return (array);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	char	str[] = "Hello World 42Tokyo! kmoriyam";
-// 	char	charset = ' ';
-// 	char	**result;
-// 	result = ft_split(str, charset);
-// 	for (int i = 0; result[i] != NULL; i++)
-// 	{
-// 		printf("%s\n", result[i]);
-// 	}
-// }

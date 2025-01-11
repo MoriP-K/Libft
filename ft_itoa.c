@@ -6,7 +6,7 @@
 /*   By: kmoriyam <kmoriyam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:25:16 by kmoriyam          #+#    #+#             */
-/*   Updated: 2024/11/03 14:54:12 by kmoriyam         ###   ########.fr       */
+/*   Updated: 2025/01/11 13:40:44 by kmoriyam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int n = -2147483648;
-// 	printf("%s\n", ft_itoa(n));
-// }
